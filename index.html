@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header><h1>Library</h1></header>
+    <div id="GridCont">
+        <div>
+            <a style="text-decoration: none; font-size: 25px;"href="#container">
+                <div class="card">
+                <img src="Icon_31-512.webp" alt="add A book" style="width:80%; padding-top:22%;">
+                <div class="container">
+                    <h4><b>Add a Book</b></h4>
+                  </div>
+              </div> 
+            </a>
+        </div>
+    </div>
 
+<div id="container">
+    <div id="formContainer" class="reveal">
+        <div style="background-color: white;"></div>
+        <label style="margin-right: 140px;" >Title: </label> <input id="TitleInput"type="text"><br>
+        <label style="margin-right: 121px;" >Author: </label> <input id="AuthorInput" type="text"><br>
+        <label style="margin-right: 57px;" >Pages Number: </label><input id="PagesInput"type="number"><br>
+        <label style="margin-right: 167px;">Status: </label><br>
+        <select id="StatusInput" name="Status" id="StatusSelect">
+            <option default value="Plan To Read">Plan To Read</option>
+            <option value="Reading">Reading</option>
+            <option value="Completed">Completed</option>
+        </select><br>
+        <div style="text-align: center;;margin: 7%;">
+            <button style="margin-right: 4% ;" onclick="Book()">Add Book</button>
+        <a href="#"><button>Cancel</button></a></div>
+
+    </div>
+    
+</body>
+</html>
